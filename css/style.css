@@ -104,7 +104,7 @@ a.move-top span {
     color: #ff3f34;
     font-size: 30px;
 }
-
+.calltoaction{background-color:#0b1113; color:white;}
 /* //bottom-to-top */
 
 /* header */
@@ -526,7 +526,7 @@ button.submit {
 
 /* left side text */
 .banner-info_agile_w3ls {
-    padding-top: 10em;
+    padding-top: 3em;
     padding-left: 5em;
 }
 
@@ -578,12 +578,13 @@ a.button-w3ls:hover {
 }
 
 .banner-top1 {
-    background: url(../images/1.jpg) no-repeat bottom;
+    background: url(../images/b3-2.jpg) no-repeat left;
     background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    min-height: 500px;
 }
 
 .banner-top2 {
@@ -620,7 +621,7 @@ a.button-w3ls:hover {
 
 /* about */
 .about {
-    background: url(../images/bg1.jpg) no-repeat left;
+    background: url(../images/b3.jpg) no-repeat left;
     background-size: cover;
     -webkit-background-size: contain;
     -moz-background-size: cover;
@@ -1214,7 +1215,7 @@ h3.title-sub span {
     }
 
     .banner-info_agile_w3ls {
-        padding-top: 9em;
+        padding-top: 2em;
         padding-left: 3em;
     }
 
@@ -1255,7 +1256,7 @@ h3.title-sub span {
     }
 
     .banner-info_agile_w3ls {
-        padding-top: 7em;
+        padding-top: 1em;
     }
 
     .banner-top1,
