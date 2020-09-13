@@ -4,6 +4,12 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -13,11 +19,15 @@ body a {
 }
 html, body{
     font-size: 100%;
-	font-family: 'Open Sans Condensed';
+	font-family: 'Raleway', sans-serif;
 }
 body{
 	background:#FFFFFF;
 }
+
+.text-center{text-align: center;}
+.align-center{margin-left:auto; margin-right:auto;}
+
 .w3layouts-banner-top{
     padding: .2em 0;
     background: #F44336;
@@ -85,7 +95,16 @@ body{
 	color:#fff;
 	font-size:1em;
 	text-decoration:none;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Sacramento', cursive;
+}
+.grand-titre{
+    margin-top:6em;
+    text-align: center;
+    margin-left:auto; margin-right:auto;
+    float:none;
+}
+.grand-titre h1 a{
+    font-size:6rem !important;
 }
 /*-- top-nav --*/
 .top-nav {
@@ -99,7 +118,7 @@ body{
 .top-nav ul li{
     display: inline-block;
     margin: 0 1em;
-    float: left;
+    /*float: left;*/
 }
 .top-nav ul li:nth-child(6){
 	margin-right:0;
@@ -200,7 +219,7 @@ ul.dropdown-menu {
     margin-left: 14px;
 }
 .banner-slider {
-    margin: 8em 0 0 0;
+    margin: 3em 0 0 0;
 }
 .agileits-banner-info{
     margin: 0 auto;
@@ -209,10 +228,10 @@ ul.dropdown-menu {
 }
 .agileits-banner-info h3{
     color: #FFFFFF;
-    font-size: 4em;
+    font-size: 2em;
     margin: 0;
-    font-weight: 700;
-    font-family: 'Open Sans Condensed';
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
 }
 .agileits-banner-info p{
     color: #ffffff;
@@ -226,9 +245,9 @@ ul.dropdown-menu {
     color: #FFFFFF;
     font-size: 1em;
     padding: .5em 1em;
-    display: block;
+    display: inline-block;
     border: solid 2px #f44336;
-    width: 15%;
+    /*width: 15%;*/
     text-align: center;
     text-decoration: none;
     margin: 2em auto 0;
@@ -241,6 +260,38 @@ ul.dropdown-menu {
     background: none;
     color: #FFFFFF;
 }
+/* -- paddings --*/
+.pt-sm{padding-top:1em;}
+.pt-md{padding-top:2em;}
+.pt-lg{padding-top:3em;}
+.pt-xl{padding-top:4em;}
+
+.pb-sm{padding-bottom:1em;}
+.pb-md{padding-bottom:2em;}
+.pb-lg{padding-bottom:3em;}
+.pb-xl{padding-bottom:4em;}
+
+.pl-sm{padding-left:1em;}
+.pl-md{padding-left:2em;}
+.pl-lg{padding-left:3em;}
+.pl-xl{padding-left:4em;}
+
+.pr-sm{padding-right:1em;}
+.pr-md{padding-right:2em;}
+.pr-lg{padding-right:3em;}
+.pr-xl{padding-right:4em;}
+
+.py-sm{padding-top:1em; padding-bottom:1em;}
+.py-md{padding-top:2em; padding-bottom:2em;}
+.py-lg{padding-top:3em; padding-bottom:3em;}
+.py-xl{padding-top:4em; padding-bottom:4em;}
+
+.px-sm{padding-top:1em; padding-bottom:1em;}
+.px-md{padding-top:2em; padding-bottom:2em;}
+.px-lg{padding-top:3em; padding-bottom:3em;}
+.px-xl{padding-top:4em; padding-bottom:4em;}
+
+
 /*--slider--*/
 #slider2,
 #slider3 {
@@ -358,6 +409,7 @@ ul.dropdown-menu {
   padding: 0;
 }
 .rslides li {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   position: absolute;
   display:none;
@@ -425,7 +477,7 @@ ul.dropdown-menu {
     margin: 0;
     font-size: 2.5em;
     text-transform: capitalize;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 .w3-agileits-services-grids{
@@ -569,9 +621,6 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 }
 /*-- //offer --*/
 /*-- special --*/
-.special{
-	
-}
 .special-grids{
 	margin:4em 0 0 0;
 }
@@ -1433,16 +1482,16 @@ h2.typoh2{
 	opacity: 1;
 }
 .agile-b-wrapper h5 {
-    font-size: 2em;
+    font-size: 1em;
     color: #fff;
     text-align: center;
-    margin: 3.5em auto 0;
+    margin: 1.25em auto 0;
     background: #F44336;
-    width: 100px;
-    font-weight: 700;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    line-height: 3em;
+    line-height: 1.2em;
+    padding:4.25em 1em;
 }
 .agile-b-wrapper h5 span{
 	font-weight:100;
@@ -1813,7 +1862,8 @@ h2.typoh2{
 	}
 	.services-heading h2, .w3l-offer-heading h3, .wthree-special-heading h3, .w3-about-heading h2, .w3-different-heading h3, .agileits-team-heading h3, .contact-form h3, .w3ls-contact-grids h3 {
 		font-size: 2em;
-	}
+    }
+   
 	.agile-b-wrapper h5 {
 	    margin: 2em auto 0;
 		width: 75px;
