@@ -10,59 +10,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>IFT1142-TP1 - Marjolaine Hébert</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Royal Recipes Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="TP1 effectué par Marjolaine Hébert dans le cours IFT1142" />
 <!-- bootstrap-css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstrap-css -->
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<!--// css -->
-<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
-<link href="css/owl.theme.css" rel="stylesheet">
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
 <!-- light-box -->
 <link rel="stylesheet" href="css/lightbox.css">
-<!-- //light-box -->
 <script src="js/SmoothScroll.min.js"></script>
-<!--search jQuery-->
-<script src="js/main.js"></script>
-<!--//search jQuery-->
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-
-<script>
-$(document).ready(function() { 
-	$("#owl-demo").owlCarousel({
- 
-		autoPlay: 3000, //Set AutoPlay to 3 seconds
-		autoPlay:true,
-		items : 4,
-		itemsDesktop : [640,5],
-		itemsDesktopSmall : [414,4]
- 
-	});
-	
-}); 
-</script>
 </head>
 <body>
-	<div class="w3layouts-banner-top">
-		
-	</div>
-	<!-- banner -->
-	<div class="banner">
+	<!-- banniere -->
+	<div class="banner bordure-rouge">
 		<div class="top-banner">
 			<div class="container">
 				<div class="top-banner-left">
@@ -86,73 +47,29 @@ $(document).ready(function() {
 					<h1>
 						<a href="index.html">La Trattoria méditéranéenne</a>
 					</h1>
+					<a class="btn btn-primary" href="index.html#menu">Commander maintenant</a>
 				</div>
 				
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-		<div class="banner-slider">
-			<div class="container">
-				<div class="slider">
-					<div class="callbacks_container">
-						<ul class="rslides callbacks callbacks1" id="slider4">
-							<li>
-								<div class="agileits-banner-info">
-									<h3>Lorem ipsum dolor sit amet</h3>
-									<a href="index.html#menu">Commander maintenant</a>
-								</div>
-							</li>
-							<li>
-								<div class="agileits-banner-info">
-									<h3>Fusce egestas purus in nulla</h3>
-									<a href="index.html#menu">Commander maintenant</a>
-								</div>
-							</li>
-							<li>
-								<div class="agileits-banner-info">
-									<h3>Duis faucibus dolor risus</h3>
-									<a href="index.html#menu">Commander maintenant</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<script src="js/responsiveslides.min.js"></script>
-					<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						  // Slideshow 4
-						  $("#slider4").responsiveSlides({
-							auto: true,
-							pager:true,
-							nav:false,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
-						  });
-					
-						});
-					 </script>
-					<!--banner Slider starts Here-->
-				</div>
-			</div>
-		</div>
 	</div>
-	<!-- banner -->
-	<!-- services -->
+	<!-- banniere -->
+
+	<!-- Le menu -->
 	<div class="services" id="services">
 		<div class="container py-xl">
-			<div class="services-heading pb-md">
+			<div class="services-heading">
 				<h2>Le menu</h2>
+				<h3 class="rouge text-center pb-lg">Faites votre choix</h3>
 			</div>
 			
 			<!-- conteneur les entrées -->
 			<div id="plat-entree" class="col-sm-6 pb-md">
-				contenu entrées
+				<h4>Entrées</h4>
+				<select></select>
+				<img src="images/escargots.jpg" class="img-responsive">
+				<p>prix</p>
 			</div>
 
 			<!-- conteneur plats principaux -->
@@ -167,152 +84,7 @@ $(document).ready(function() {
 			
 		</div>
 	</div>
-	<!-- //services -->
-	<!-- offer -->
-	<div class="jarallax offer">
-		<div class="container">
-			<div class="w3l-offer-heading">
-				<h3>Obtenez</h3>
-			</div>
-			<div class="w3ls-offer-slider">
-				<div class="slider">
-					<div class="callbacks_container">
-						<ul class="rslides callbacks callbacks1" id="slider3">
-							<li>
-								<div class="agileinfo-offer-grid">
-									<h4>45<span>%</span></h4>
-									<h5>Pork Vindaloo</h5>
-									<p>Quisque scelerisque rutrum nunc, eget hendrerit diam porta efficitur. Duis bibendum consequat est, sed efficitur arcu. Morbi viverra, leo sit amet vestibulum dignissim, tortor est dignissim dolor, eu accumsan est urna id felis. </p>
-								</div>
-							</li>
-							<li>
-								<div class="agileinfo-offer-grid">
-									<h4>50%</h4>
-									<h5>Phaal Curry</h5>
-									<p>Vestibulum euismod porttitor interdum. Vivamus porta consectetur nulla porttitor hendrerit. Pellentesque ultrices augue ut nibh feugiat, nec egestas orci cursus. Sed vehicula quis erat sed lobortis. Curabitur eleifend sit amet.</p>
-								</div>
-							</li>
-							<li>
-								<div class="agileinfo-offer-grid">
-									<h4>64%</h4>
-									<h5>Laal Maas</h5>
-									<p>Aenean volutpat auctor ultrices. Aliquam ac turpis ultrices, porta enim at, interdum velit. Ut ligula justo, sodales eu nisi a, molestie dictum leo. Sed blandit porta ante, at consequat nulla fermentum a. Donec aliquet tristique.</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						  // Slideshow 4
-						  $("#slider3").responsiveSlides({
-							auto: true,
-							pager:false,
-							nav:false,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
-						  });
-					
-						});
-					 </script>
-					<!--banner Slider starts Here-->
-				</div>
-			</div>
-			<script src="js/jarallax.js"></script>
-		</div>
-	</div>
-	<!-- //offer -->
-	<!-- special -->
-	<div class="special">
-		<div class="container">
-			<div class="wthree-special-heading">
-				<h3>Nos plats cuisinés à emporter </h3>
-			</div>
-			<div class="special-grids">
-				<div id="owl-demo" class="owl-carousel owl-theme">
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s1.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$20</del> $15</p>
-								</div>
-							</div>	
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s2.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$25</del> $10</p>
-								</div>
-							</div>	
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s3.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$16</del> $12</p>
-								</div>
-							</div>	
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s4.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$32</del> $22</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s1.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$20</del> $15</p>
-								</div>
-							</div>	
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s2.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$25</del> $10</p>
-								</div>
-							</div>	
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s3.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$16</del> $12</p>
-								</div>
-							</div>	
-						</div>
-						<div class="item">
-							<div class="w3-agileits-special-grid-info">
-								<img src="images/s4.jpg" alt="" />
-								<div class="agile-special-grid-text"> 
-									<h5>Pellentesque justo enim, tempor et tellus eu, molestie viverra ligula.</h5>
-									<p><del>$32</del> $22</p>
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //special -->
+	<!-- //menu -->
 	
 	<!-- footer -->
 	<div class="w3-agile-footer">
@@ -323,33 +95,5 @@ $(document).ready(function() {
 		</div>
 	</div>
 	<!-- //footer -->
-	<script src="js/owl.carousel.js"></script>  
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-<script type="text/javascript">
-			/* init Jarallax */
-			$('.jarallax').jarallax({
-				speed: 0.5,
-				imgWidth: 1366,
-				imgHeight: 768
-			})
-		</script>
 </body>	
 </html>

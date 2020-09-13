@@ -24,7 +24,34 @@ html, body{
 body{
 	background:#FFFFFF;
 }
-
+/* bootstrap fix */
+.btn{
+    margin-top:3em;
+    margin-bottom:3em; 
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing: 0.25em;
+    padding:1em 2em;
+    border-radius: 8px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #f44336;
+    border-color: #f44336;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary.focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #2f2f2f;
+    border-color: #2f2f2f;
+  }
+.blanc{color:white;}
+.rouge{color:#f44336;}
+.bordure-rouge{border-top:6px solid #F44336}
 .text-center{text-align: center;}
 .align-center{margin-left:auto; margin-right:auto;}
 
