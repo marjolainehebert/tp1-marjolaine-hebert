@@ -21,7 +21,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="css/lightbox.css">
 <script src="js/SmoothScroll.min.js"></script>
 </head>
-<body>
+
+<body onLoad="chargerSel();">
 	<!-- banniere -->
 	<div class="banner bordure-rouge">
 		<!-- identification -->
@@ -65,6 +66,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			
 			<!-- conteneur les entrées -->
 			<div id="plat-entree" class="col-sm-6 pb-md text-center">
+				<img src="" id="imgEntree">
+	<select id="selEntree" onChange="choixEntree();"></select>
 				<h4>Entrées</h4>
 				<select></select>
 				<img src="images/escargots.jpg" class="img-responsive py-sm">
