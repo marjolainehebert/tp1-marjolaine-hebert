@@ -20,11 +20,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- light-box -->
 <link rel="stylesheet" href="css/lightbox.css">
 <script src="js/SmoothScroll.min.js"></script>
-<script src="javascript/fonctions.js"></script>
-<script src="javascript/fonctions-test.js"></script>
+<script src="javascript/fonctions2.js"></script>
 </head>
 
-<body onLoad="chargerSelEntree(); chargerSelRepas(); calculerPrix();">
+<body onLoad="remplirSelEntree(); remplirSelRepas();  calculerPrix();">
 	<!-- banniere -->
 	<div class="banner bordure-rouge">
 		<!-- identification -->
@@ -68,19 +67,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			
 			<!-- conteneur les entrées -->
 			<div id="entree" class="col-sm-6 pb-md text-center">
-				<h4 class="pb-sm">Entrée</h4>
-				<select id="selEntree" onChange="choixEntree();"></select>
-				<div  class="pt-md">
+                <label>Entr&eacute;e </label>
+                <select class="select-css" id="selEntree" onchange="infoEntreeChoisi(this);"></select>
+                <div  class="pt-md">
 					<img class="img-responsive" src="" id="imgEntree">
 				</div>
 				<p id="prixEntree"></p>
 			</div>
 
 			<!-- conteneur plats principaux -->
-			<div id="plat" class="col-sm-6 pb-md text-center">
-				<h4 class="pb-sm">Repas</h4>
-				<select id="selRepas" onChange="choixRepas();"></select>
-				<div  class="pt-md">
+			<div id="repas" class="col-sm-6 pb-md text-center">
+                <label>Repas </label>
+                <select class="select-css" id="selRepas" onchange="infoRepasChoisi(this);"></select>
+                <div  class="pt-md">
 					<img class="img-responsive" src="" id="imgRepas">
 				</div>
 				<p id="prixRepas"></p>

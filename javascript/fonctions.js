@@ -1,57 +1,57 @@
-// tableau des entrées
-var entrees=new Array();
-    entrees['salade']=new Array('salade.jpg',5.95);
-	entrees['escargots']=new Array('escargots.jpg',4.95);
-
-// tableau des repas
-var repas=new Array()
-	repas['spaghetti']=new Array('spaghetti.jpg', 8.95);
-	repas['lasagne']=new Array('lasagne.jpg', 9.95);
-
-	//initialiser le prix de l'entrée et du repas à 0
+//initialiser le prix de l'entrée et du repas à 0
 var prixEntree=0; 
 var prixRepas=0;
+
+// tableau des entrées
+var tabEntrees=[
+    {"nom":"Salade", "prix":5.95,"src":"images/salade.jpg"},
+    {"nom":"Escargots","prix":4.95,"src":"images/escargots.jpg"}];
+
+// tableau des repas 
+var tabRepas=[
+    {"nom":"Spaghetti","prix":8.95,"src":"images/spaghetti.jpg"},
+    {"nom":"Lasagne","prix":9.95,"src":"images/lasagne.jpg"}
+];
     
 // fonction pour charger le sélecteur Entrée
-function chargerSelEntree(){
-	var selEntree=document.getElementById('selEntree');
-	selEntree.options[0]=new Option("Choisir une entree");
-	var i=1;
-	for (uneEntree in entrees){
-		selEntree.options[i++]=new Option(uneEntree);
+function remplirSelEntree() {
+    var selEntree=document.querySelector('#selEntree');
+    selEntree.options[selEntree.options.length]=new Option("Votre Choix");
+	for (uneEntree of tabEntrees) {
+        selEntree.options[selEntree.options.length]=new Option(uneEntree.nom);
 	}
-}     
+} 
+
 // fonction pour charger le sélecteur Repas
-function chargerSelRepas(){
-	var selRepas=document.getElementById('selRepas');
-	selRepas.options[0]=new Option("Choisir une repas");
-	var i=1;
-	for (unRepas in repas){
-		selRepas.options[i++]=new Option(unRepas);
+function remplirSelRepas() {
+    var selRepas=document.querySelector('#selRepas');
+    selRepas.options[selRepas.options.length]=new Option("Votre Choix");
+	for (unRepas of tabRepas) {
+        selRepas.options[selRepas.options.length]=new Option(unRepas.nom);
 	}
-}  
+} 
 
-//fonction pour afficher les items selon le choix du menu déroulant
-function choixEntree(){
-	var selEntree=document.getElementById('selEntree');
-	var votreEntree=selEntree.options[selEntree.selectedIndex].text;
-	var tab=entrees[votreEntree];
-    document.getElementById('imgEntree').src='images/'+tab[0];
-	prixEntree=tab[1];
-	document.getElementById('prixEntree').innerHTML='Prix : '+prixEntree+" $";
-	calculerPrix()
+// aller chercher les options du tableau choisi dans les entrées
+function infoEntreeChoisi(selEntree){
+    var posEntreeChoisi=selEntree.selectedIndex-1;
+    var entreeChoisie=tabEntrees[posEntreeChoisi];
+    document.getElementById('imgEntree').src=entreeChoisie.src;
+    document.getElementById('prixEntree').innerHTML="Prix : <strong>"+entreeChoisie.prix+" $</strong>";
+    prixEntree=entreeChoisie.prix;
+    calculerPrix();
 }
 
-function choixRepas(){
-	var selRepas=document.getElementById('selRepas');
-	var votreRepas=selRepas.options[selRepas.selectedIndex].text;
-	var tab=repas[votreRepas];
-    document.getElementById('imgRepas').src='images/'+tab[0];
-	prixRepas=tab[1];
-	document.getElementById('prixRepas').innerHTML='Prix : '+prixRepas+" $";
-	calculerPrix()
+// aller chercher les options du tableau choisi dans les repas
+function infoRepasChoisi(selRepas){
+    var posRepasChoisi=selRepas.selectedIndex-1;
+    var repasChoisie=tabRepas[posRepasChoisi];
+    document.getElementById('imgRepas').src=repasChoisie.src;
+    document.getElementById('prixRepas').innerHTML="Prix : <strong>"+repasChoisie.prix+" $</strong>";
+    prixRepas=repasChoisie.prix;
+    calculerPrix();
 }
 
+//calculer les montants avec les taxes
 function calculerPrix() {
 	var prixAvantTaxes=prixEntree+prixRepas;
 	var taxes=prixAvantTaxes*14.975/100;
