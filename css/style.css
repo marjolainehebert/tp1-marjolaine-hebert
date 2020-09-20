@@ -25,6 +25,7 @@ body{
 	background:#FFFFFF;
 }
 p {margin-top:1.5em;}
+.bold{font-weight: 700;}
 .afficher-prix{
   display: block;
   margin:2em auto;
@@ -44,8 +45,8 @@ p {margin-top:1.5em;}
 }
 .btn-primary {
     color: #fff;
-    background-color: #f44336;
-    border-color: #f44336;
+    background-color: #f04100;
+    border-color: #f04100;
   }
   .btn-primary:hover,
   .btn-primary:focus,
@@ -58,14 +59,14 @@ p {margin-top:1.5em;}
     border-color: #2f2f2f;
   }
 .blanc{color:white;}
-.rouge{color:#f44336;}
-.bordure-rouge{border-top:6px solid #F44336}
+.rouge{color:#f04100;}
+.bordure-rouge{border-top:6px solid #f04100}
 .text-center{text-align: center;}
 .align-center{margin-left:auto; margin-right:auto;}
 
 .w3layouts-banner-top{
     padding: .2em 0;
-    background: #F44336;
+    background: #f04100;
 }
 /*-- banner --*/
 .banner{
@@ -178,10 +179,10 @@ ul.nav.navbar-nav {
     font-weight: 700;
 }
 .top-nav ul li a:hover{
-    color: #F44336 !important;
+    color: #f04100 !important;
 }
 .top-nav ul li a.active{
-    color: #F44336 !important;
+    color: #f04100 !important;
 }
 ul.dropdown-menu {
     background: rgba(0, 0, 0, 0.24);
@@ -281,14 +282,14 @@ ul.dropdown-menu {
     font-size: 1em;
     padding: .5em 1em;
     display: inline-block;
-    border: solid 2px #f44336;
+    border: solid 2px #f04100;
     /*width: 15%;*/
     text-align: center;
     text-decoration: none;
     margin: 2em auto 0;
     font-weight: 700;
     letter-spacing: 1px;
-    background: #f44336;
+    background: #f04100;
 }
 .agileits-banner-info a:hover{
     border: solid 2px #FFFFFF;
@@ -321,10 +322,10 @@ ul.dropdown-menu {
 .py-lg{padding-top:3em; padding-bottom:3em;}
 .py-xl{padding-top:4em; padding-bottom:4em;}
 
-.px-sm{padding-top:1em; padding-bottom:1em;}
-.px-md{padding-top:2em; padding-bottom:2em;}
-.px-lg{padding-top:3em; padding-bottom:3em;}
-.px-xl{padding-top:4em; padding-bottom:4em;}
+.px-sm{padding-left:1em; padding-right:1em;}
+.px-md{padding-left:2em; padding-right:2em;}
+.px-lg{padding-left:3em; padding-right:3em;}
+.px-xl{padding-left:4em; padding-right:4em;}
 
 .inline{display: inline-block;}
 
@@ -501,8 +502,8 @@ ul.dropdown-menu {
     -ms-border-radius: 50%;
 }
 .callbacks_here a:after{
-    background: #f44336;
-    border: 2px solid #f44336;
+    background: #f04100;
+    border: 2px solid #f04100;
 }
 /*-- services --*/
 .services,.offer,.special,.w3-agile-footer,.w3l-about-top,.different,.team,.codes,.typography,.gallery,.contact{
@@ -527,7 +528,7 @@ ul.dropdown-menu {
     text-align: center;
 }
 i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs-up {
-    color: #F44336;
+    color: #f04100;
     font-size: 2em;
 }
 .services-icon{
@@ -550,7 +551,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
-  background: #F44336;
+  background: #f04100;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -625,7 +626,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 }
 .agileinfo-offer-grid h4 {
     color: #FFFFFF;
-    background: #F44336;
+    background: #f04100;
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -677,7 +678,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
     font-weight: 700;
 }
 .agile-special-grid-text p{
-    color: #f44336;
+    color: #f04100;
     font-size: 2em;
     margin: 1em 0 0 0;
     font-weight: 700;
@@ -864,12 +865,12 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
     outline: none;
 }
 .footer-grid-info form input[type="submit"] {
-    border: solid 2px #F44336;
+    border: solid 2px #f04100;
     color: #ffffff;
     font-size: 1em;
     padding: .4em 2em;
     text-decoration: none;
-    background: #F44336;
+    background: #f04100;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -962,12 +963,12 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
     text-align: center;
 }
 .w3agile-button a{
-    border: solid 2px #f44336;
+    border: solid 2px #f04100;
     color: #FFFFFF;
     font-size: 1em;
     padding: .5em 2em;
     text-decoration: none;
-    background: #f44336;
+    background: #f04100;
 }
 .w3agile-button a:hover{
     border: solid 2px #FFFFFF;
@@ -1050,7 +1051,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
   background: #1a4a72;
 }
 .ih-item.circle.effect10 .info {
-    background: #F44336;
+    background: #f04100;
     opacity: 0;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
@@ -1158,7 +1159,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
     cursor: pointer;
 } 
 .icon-box:hover {
-	background: #f44336;
+	background: #f04100;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1205,7 +1206,7 @@ i.fa.fa-anchor, i.fa.fa-comment, i.fa.fa-heartbeat,i.fa.fa-magnet,i.fa.fa-thumbs
 }
 h3.icon-subheading {
     font-size: 2em;
-    color: #f44336 !important;
+    color: #f04100 !important;
     margin: 30px 0 15px;
 }
 h3.agileits-icons-title {
@@ -1521,7 +1522,7 @@ h2.typoh2{
     color: #fff;
     text-align: center;
     margin: 1.25em auto 0;
-    background: #F44336;
+    background: #f04100;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -1582,14 +1583,14 @@ h2.typoh2{
   -webkit-appearance: none;
 }
 .contact-form input[type="submit"] {
-    border: solid 2px #F44336;
+    border: solid 2px #f04100;
     color: #ffffff;
     font-size: 1em;
     font-weight: 600;
     padding: .4em 2em;
     text-decoration: none;
     letter-spacing: 1px;
-    background: #F44336;
+    background: #f04100;
     margin: 1em 0 0 0;
     -webkit-appearance: none;
     transition: 0.5s all;

@@ -2,15 +2,17 @@
 var entrees=new Array();
     entrees['salade']=new Array('salade.jpg',5.95);
 	entrees['escargots']=new Array('escargots.jpg',4.95);
-    
+
+// tableau des repas
 var repas=new Array()
 	repas['spaghetti']=new Array('spaghetti.jpg', 8.95);
 	repas['lasagne']=new Array('lasagne.jpg', 9.95);
-	
-var prixEntree=0;
+
+	//initialiser le prix de l'entrée et du repas à 0
+var prixEntree=0; 
 var prixRepas=0;
     
-// fonction pour charger le sélecteur 
+// fonction pour charger le sélecteur Entrée
 function chargerSelEntree(){
 	var selEntree=document.getElementById('selEntree');
 	selEntree.options[0]=new Option("Choisir une entree");
@@ -19,10 +21,10 @@ function chargerSelEntree(){
 		selEntree.options[i++]=new Option(uneEntree);
 	}
 }     
-
+// fonction pour charger le sélecteur Repas
 function chargerSelRepas(){
 	var selRepas=document.getElementById('selRepas');
-	selRepas.options[0]=new Option("Choisir une entree");
+	selRepas.options[0]=new Option("Choisir une repas");
 	var i=1;
 	for (unRepas in repas){
 		selRepas.options[i++]=new Option(unRepas);
@@ -37,7 +39,6 @@ function choixEntree(){
     document.getElementById('imgEntree').src='images/'+tab[0];
 	prixEntree=tab[1];
 	document.getElementById('prixEntree').innerHTML='Prix : '+prixEntree+" $";
-	alert (prixEntree);
 	calculerPrix()
 }
 
@@ -48,7 +49,6 @@ function choixRepas(){
     document.getElementById('imgRepas').src='images/'+tab[0];
 	prixRepas=tab[1];
 	document.getElementById('prixRepas').innerHTML='Prix : '+prixRepas+" $";
-	alert (prixRepas);
 	calculerPrix()
 }
 
