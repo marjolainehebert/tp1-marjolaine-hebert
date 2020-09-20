@@ -20,6 +20,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- light-box -->
 <link rel="stylesheet" href="css/lightbox.css">
 <script src="js/SmoothScroll.min.js"></script>
+<script src="javascript/fonctions.js"></script>
 </head>
 
 <body onLoad="chargerSel();">
@@ -65,21 +66,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			
 			<!-- conteneur les entrées -->
-			<div id="plat-entree" class="col-sm-6 pb-md text-center">
-				<img src="" id="imgEntree">
+			<div id="entree" class="col-sm-6 pb-md text-center">
+				<h4 class="pb-sm">Entrée</h4>
 				<select id="selEntree" onChange="choixEntree();"></select>
-				<h4>Entrées</h4>
-				<select></select>
-				<img src="images/escargots.jpg" class="img-responsive py-sm">
-				<p>prix</p>
+				<div  class="pt-md">
+					<img class="img-responsive" src="" id="imgEntree">
+				</div>
+				<p id="prixEntree"></p>
 			</div>
 
 			<!-- conteneur plats principaux -->
-			<div id="plat-entree" class="col-sm-6 pb-md text-center">
-				<h4>Repas</h4>
-				<select></select>
-				<img src="images/escargots.jpg" class="img-responsive py-sm">
-				<p>prix</p>
+			<div id="plat" class="col-sm-6 pb-md text-center">
+				<h4 class="pb-sm">Repas</h4>
+				<select id="selPlat" onChange="choixPlat();"></select>
+				<div  class="pt-md">
+					<img class="img-responsive" src="" id="imgPlat">
+				</div>
+				<p id="prixPlat"></p>
 			</div>
 
 			<!-- conteneur prix -->

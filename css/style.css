@@ -24,6 +24,7 @@ html, body{
 body{
 	background:#FFFFFF;
 }
+p {margin-top:1.5em;}
 /* bootstrap fix */
 .btn{
     margin-top:3em;
