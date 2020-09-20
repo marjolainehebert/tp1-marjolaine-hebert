@@ -25,6 +25,13 @@ body{
 	background:#FFFFFF;
 }
 p {margin-top:1.5em;}
+.afficher-prix{
+  display: block;
+  margin:2em auto;
+  padding:1em 0;
+  border-top:1px solid #ecedee;
+  border-bottom:1px solid #ecedee;
+}
 /* bootstrap fix */
 .btn{
     margin-top:3em;
@@ -319,6 +326,7 @@ ul.dropdown-menu {
 .px-lg{padding-top:3em; padding-bottom:3em;}
 .px-xl{padding-top:4em; padding-bottom:4em;}
 
+.inline{display: inline-block;}
 
 /*--slider--*/
 #slider2,

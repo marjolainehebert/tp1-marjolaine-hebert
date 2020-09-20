@@ -21,9 +21,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="css/lightbox.css">
 <script src="js/SmoothScroll.min.js"></script>
 <script src="javascript/fonctions.js"></script>
+<script src="javascript/fonctions-test.js"></script>
 </head>
 
-<body onLoad="chargerSel();">
+<body onLoad="chargerSelEntree(); chargerSelRepas(); calculerPrix();">
 	<!-- banniere -->
 	<div class="banner bordure-rouge">
 		<!-- identification -->
@@ -78,18 +79,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- conteneur plats principaux -->
 			<div id="plat" class="col-sm-6 pb-md text-center">
 				<h4 class="pb-sm">Repas</h4>
-				<select id="selPlat" onChange="choixPlat();"></select>
+				<select id="selRepas" onChange="choixRepas();"></select>
 				<div  class="pt-md">
-					<img class="img-responsive" src="" id="imgPlat">
+					<img class="img-responsive" src="" id="imgRepas">
 				</div>
-				<p id="prixPlat"></p>
+				<p id="prixRepas"></p>
 			</div>
 
-			<!-- conteneur prix -->
-			<div id="afficher-prix" class="col-xs-12 col-12 text-center">
-				Sous-total : montant
-				Taxes : montant
-				Total : montant
+			<!-- calculer le prix -->
+			<div id="afficher-prix" class="col-xs-12 col-12 text-center afficher-prix">
+				<div class="px-md inline">
+					Sous-total : <span id="prix-avant-taxes" class="bold">0 $</span>
+				</div>
+				<div class="px-md inline">
+					Taxes : <span id="les-taxes" class="bold">0 $</span>
+				</div>
+				<div class="px-md inline">
+					Total : <span id="prix-total" class="bold">0 $</span>
+				</div>
+			</div>
+
+
+
+			<!-- test -->
+			<div id="entree" class="col-sm-6 pb-md text-center">
+				<select id="selEntree" onChange="choixEntree();"></select>
+				<div  class="pt-md">
+					<img class="img-responsive" src="" id="imgEntree">
+				</div>
+				<p id="prixEntree"></p>
+
+				<select id="selRepas" onChange="choixEntree();"></select>
+				<div  class="pt-md">
+					<img class="img-responsive" src="" id="imgRepas">
+				</div>
+				<p id="prixRepas"></p>
 			</div>
 			
 		</div>
