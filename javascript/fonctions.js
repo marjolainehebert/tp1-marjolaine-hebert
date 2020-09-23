@@ -38,6 +38,7 @@ function infoEntreeChoisi(selEntree){
     document.getElementById('imgEntree').src=entreeChoisie.src;
     document.getElementById('prixEntree').innerHTML="Prix : <strong>"+entreeChoisie.prix+" $</strong>";
     prixEntree=entreeChoisie.prix;
+    
     calculerPrix();
 }
 
