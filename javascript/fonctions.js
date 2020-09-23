@@ -38,8 +38,7 @@ function infoEntreeChoisi(selEntree){
     document.getElementById('imgEntree').src=entreeChoisie.src;
     document.getElementById('prixEntree').innerHTML="Prix : <strong>"+entreeChoisie.prix+" $</strong>";
     prixEntree=entreeChoisie.prix;
-    
-    calculerPrix();
+    calculerPrix(); //appeler la fonction de calcul - calculerPrix
 }
 
 // aller chercher les options du tableau choisi dans les repas
@@ -49,7 +48,7 @@ function infoRepasChoisi(selRepas){
     document.getElementById('imgRepas').src=repasChoisie.src;
     document.getElementById('prixRepas').innerHTML="Prix : <strong>"+repasChoisie.prix+" $</strong>";
     prixRepas=repasChoisie.prix;
-    calculerPrix();
+    calculerPrix(); //appeler la fonction de calcul - calculerPrix
 }
 
 //calculer les montants avec les taxes
