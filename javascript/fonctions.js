@@ -16,7 +16,7 @@ var tabRepas=[
 // fonction pour charger le sélecteur Entrée
 function remplirSelEntree() {
     var selEntree=document.querySelector('#selEntree');
-    selEntree.options[selEntree.options.length]=new Option("Votre Choix");
+    selEntree.options[selEntree.options.length]=new Option("Choisir une entrée");
 	for (uneEntree of tabEntrees) {
         selEntree.options[selEntree.options.length]=new Option(uneEntree.nom);
 	}
@@ -25,7 +25,7 @@ function remplirSelEntree() {
 // fonction pour charger le sélecteur Repas
 function remplirSelRepas() {
     var selRepas=document.querySelector('#selRepas');
-    selRepas.options[selRepas.options.length]=new Option("Votre Choix");
+    selRepas.options[selRepas.options.length]=new Option("Choisir un repas");
 	for (unRepas of tabRepas) {
         selRepas.options[selRepas.options.length]=new Option(unRepas.nom);
 	}
